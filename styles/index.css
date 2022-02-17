@@ -124,3 +124,65 @@ table {
 }
 
 /* RESET ENDS */
+
+/* BODY */
+
+body {
+  background-color: rgba(70, 159, 218, 0.767);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* BODY ENDS */
+
+/* CARD */
+
+.card {
+  height: 70vh;
+  width: 30vw;
+  max-height: 800px;
+  min-height: 500px;
+  min-width: 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-color: rgba(235, 83, 227, 0.651);
+  border-radius: 6px;
+}
+
+.card__title {
+  font-size: 2.5rem;
+}
+
+.image__wrapper {
+  background-color: rgba(164, 212, 245, 0.767);
+  min-width: 300px;
+  min-height: 190px;
+}
+
+.card__image {
+  animation: imgZoom 2.5s ease infinite;
+}
+
+/* CARD END */
+
+/* ANIMATION */
+
+@keyframes imgZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card__image:hover {
+}
