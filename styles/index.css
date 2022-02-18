@@ -152,10 +152,12 @@ body {
   text-align: center;
   background-color: rgba(235, 83, 227, 0.651);
   border-radius: 6px;
+  box-shadow: 1px 2px 6px 0px;
 }
 
 .card__title {
   font-size: 2.5rem;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .image__wrapper {
@@ -168,21 +170,36 @@ body {
   animation: imgZoom 2.5s ease infinite;
 }
 
+.card__text {
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+  animation: textMov 2.5s ease infinite;
+}
+
 /* CARD END */
 
 /* ANIMATION */
 
 @keyframes imgZoom {
   0% {
-    transform: scale(1);
+    transform: scale(1) rotate(-8deg);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(5deg);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1) rotate(-8deg);
   }
 }
 
-.card__image:hover {
+@keyframes textMov {
+  0% {
+    transform: translate(0, 5px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(0, 5px);
+  }
 }
